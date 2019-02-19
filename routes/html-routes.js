@@ -11,7 +11,7 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, '/../public/edit.html'));
     })
 
-    //Default to index.html
+    //Default for Homepage
     app.get('*', function (req, res) {
         res.sendFile(path.join(__dirname, '../public/edit.html'));
     });
