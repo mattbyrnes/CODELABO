@@ -1,0 +1,60 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/css/codemirror.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/monokai.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>CODELABO</title>
+</head>
+
+<body>
+
+    <div class="edit-col">
+        <form>
+            <textarea id="htmlEditor"></textarea>
+        </form>
+    </div>
+
+    <!-- <form>
+        <div class="edit-col">
+            <h2 id="project-title">${dbLoad.name}</h2>
+            <textarea id="htmlEditor">${dbLoad.html}</textarea>
+            <textarea id="cssEditor">${dbLoad.css}</textarea>
+            <textarea id="jsEditor">${dbLoad.javascript}</textarea>
+        </div>
+        <div class="preview-col">
+            <Label>Preview</label>
+            <iframe id="preview"></iframe>
+        </div>
+    </form> -->
+
+    <!-- Trigger/Open The Modal -->
+    <button id="saveButton" class="save-btn">Save Project</button>
+    <button id="myBtn" class="projects-btn">My Projects</button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>My Projects</h2><br /><br />
+            <div id="projectlist">
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="/js/codemirror.js"></script>
+        <script src="/codemirror/mode/xml/xml.js"></script>
+        <script src="/codemirror/mode/css/css.js"></script>
+        <script src="/codemirror/mode/javascript/javascript.js"></script>
+        <script src="/codemirror/addon/edit/closetag.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+
+        <script src="/js/edit.js"></script>
+        <script src="js/modals.js"></script>
+
+</body>

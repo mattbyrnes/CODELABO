@@ -1,0 +1,232 @@
+a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+.save-btn {
+    width: 110px;
+    position: absolute; 
+    top: 10px; 
+    right: 20px;
+    background: hotpink;
+    border-radius: 40px;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #eee;
+}
+
+.projects-btn {
+    width: 110px;
+    position: absolute; 
+    top: 10px; 
+    right: 20px;
+    background: #111;
+    border-radius: 40px;
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #eee;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+    background-color: #111;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #111;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    color: #fff;
+  }
+
+  .modal-content a {
+    display: block;
+    color: #ddd;
+    font-size: 11px;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 7px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #666;
+    height: 30px;
+  }
+
+  .modal-content a:hover {
+    color: hotpink;
+  }
+  
+.del-btn {
+    float: right;
+    color: #fff;
+    background: none;
+    border: 0px;
+    padding: 5px;
+    z-index: 2;
+}
+
+.del-btn:hover {
+    color: purple;
+}
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #111;
+}
+
+label {
+	display: none;
+}
+
+.logo {
+    display: none;
+    display: block;
+    width: 400px;
+    margin: 100px auto 20px;
+    color: #fff;
+}
+
+.sign-in-modal {
+    display: block;
+    width: 400px;
+    height: 280px;
+    background: #eee;
+    border-radius: 10px;
+    margin: 10px auto 0px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sign-in-modal h2 {
+    margin-bottom: 20px;
+}
+
+.sign-in-modal p {
+    text-align: center;
+}
+
+.sign-in-modal .btn {
+   display: block;
+   margin: 10px auto 20px; 
+   background: hotpink;
+   color: #fff;
+   padding: 10px 20px;
+   box-sizing: border-box;
+   border: 0px;
+   border-radius: 10px;
+}
+
+.text-input {
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.CodeMirror {
+    height: 30vh;
+    margin-bottom: 1px;
+    padding-top: 6px;
+ }
+
+.title-input .CodeMirror {
+    height: auto;
+    width: 100%;
+    background: #111;
+    color: #fff;
+    margin-bottom: 1px;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.preview-col {
+    width: 70%;
+    height: 100vh;
+    float: left;
+    background: #eee;
+    overflow: scroll;
+}
+
+#preview {
+    width: 100%;
+    height: 99vh;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.device {
+    width: 380px;
+    height: 600px;
+    /* background: url(../images/mobile.png); */
+    background: #ddd;
+    border-radius: 30px;
+    padding: 30px 10px;
+    margin: 20px auto;
+}
+
+.edit-col {
+    width: 30%;
+    max-height: 100vh;
+	float: left;
+}
+
+.project-col {
+    overflow: scroll;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10vw;
+    height: 100vh;
+    float: right;
+    background: #eee;
+    font-size: 11px;
+    padding: 10px;
+    box-sizing: border-box;
+}
