@@ -22,10 +22,44 @@ $(document).ready(function () {
 
   } else {
 
-    title.setValue(`Untitled Project`)
-    editor.setValue(`<h1>Hello World!</h1><p>This is an online editor.</p>`)
-    editorCSS.setValue(`<style> h1 {color: red;} p {color: blue;} </style>`)
-    editorJS.setValue(`<script></script>`)
+title.setValue(`Untitled Project`)
+
+editor.setValue(`<h1>
+  Welcome to CODELABO
+</h1>
+
+<h2 id="hello">
+  This text is changed by the JS
+</h2>
+
+<p>
+This is an online code editor and my final project for the <a href="https://bootcamp.pe.gatech.edu/">Georgia Tech Coding Boot Camp</a>.
+</p>`)
+
+editorCSS.setValue(`<style> 
+
+body{
+  font-family: sans-serif;
+  background: #111;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {color: #fff;} 
+
+h2 {color: #f92672;}
+
+p {color: #e6db74;} 
+
+a {color: #a6e22e;}
+
+</style>`)
+
+editorJS.setValue(`<script>
+
+document.getElementById("hello").innerHTML = "Hello World!";
+
+</script>`)
 
   }
 
