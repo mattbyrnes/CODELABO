@@ -39,3 +39,10 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
+
+// Responsive Buttons
+
+$('#btn-desk').click(function() {
+  console.log('Hello')
+  $('#device').removeClass('dev-mobile');
+});
