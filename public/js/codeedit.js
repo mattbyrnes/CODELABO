@@ -15,18 +15,20 @@ $(document).ready(function () {
   title = CodeMirror.fromTextArea(document.getElementById("project-title"), {
     mode: "text/html",
     lineNumbers: false,
+    theme: "monokai",
+    rtlMoveVisually: true
   });
 
   // HTML Editor
   editor = CodeMirror.fromTextArea(code, {
-    // value: "function myScript(){return 100;}\n",
     mode: "xml",
     theme: "monokai",
     lineNumbers: true,
     autoCloseTags: true,
     lineWrapping: true,
     foldGutter: true,
-    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
+    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+    smartIndent: true
   });
 
   // CSS Editor
@@ -37,7 +39,8 @@ $(document).ready(function () {
     autoCloseTags: true,
     lineWrapping: true,
     foldGutter: true,
-    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
+    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+    smartIndent: true
   });
 
   // JS Editor
@@ -48,7 +51,8 @@ $(document).ready(function () {
     autoCloseTags: true,
     lineWrapping: true,
     foldGutter: true,
-    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"]
+    gutters: ["CodeMirror-linenumbers", "CodeMirror-foldgutter"],
+    smartIndent: true
   });
 
 
